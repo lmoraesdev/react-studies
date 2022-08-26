@@ -1,5 +1,5 @@
 {
-  "compilerOptions": {
+	"compilerOptions": {
 		"target": "ES6",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
@@ -16,8 +16,6 @@
 		"noEmit": true,
 		"jsx": "react-jsx",
 		"plugins": [{ "name": "typescript-plugin-css-modules" }]
-  },
-  "include": [
-    "src"
-  ]
+	},
+	"include": ["src"]
 }
