@@ -7,12 +7,10 @@ interface Props {
 	children?: React.ReactNode;
 }
 
-function Botao({ onClick, type, children }: Props) {
+export default function Botao({ onClick, type, children }: Props) {
 	return (
 		<button onClick={onClick} type={type} className={style.botao}>
 			{children}
 		</button>
 	);
 }
-
-export default Botao;
