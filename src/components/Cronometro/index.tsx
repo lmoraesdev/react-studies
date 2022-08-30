@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 
 interface Props {
 	selecionado: ITarefa | undefined;
+	finalizarTarefa: () => void;
 }
 
 export default function Cronometro({ selecionado }: Props) {
