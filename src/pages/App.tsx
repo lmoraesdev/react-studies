@@ -21,8 +21,8 @@ function App() {
 	}
 
 	function finalizarTarefa() {
-		setSelecionado(undefined);
 		if (selecionado) {
+			setSelecionado(undefined);
 			setTarefas((tarefasAnteriores) =>
 				tarefasAnteriores.map((tarefa) => {
 					if (tarefa.id === selecionado.id) {

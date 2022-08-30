@@ -10,7 +10,7 @@ interface Props {
 	finalizarTarefa: () => void;
 }
 
-export default function Cronometro({ selecionado }: Props) {
+function Cronometro({ selecionado }: Props) {
 	const [tempo, setTempo] = useState<number>();
 	useEffect(() => {
 		if (selecionado?.tempo) {
@@ -37,3 +37,5 @@ export default function Cronometro({ selecionado }: Props) {
 		</div>
 	);
 }
+
+export default Cronometro;
