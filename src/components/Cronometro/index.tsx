@@ -10,7 +10,7 @@ interface Props {
 	finalizarTarefa: () => void;
 }
 
-function Cronometro({ selecionado }: Props) {
+function Cronometro({ selecionado, finalizarTarefa }: Props) {
 	const [tempo, setTempo] = useState<number>();
 	useEffect(() => {
 		if (selecionado?.tempo) {
@@ -24,6 +24,7 @@ function Cronometro({ selecionado }: Props) {
 				setTempo(contador - 1);
 				return regressiva(contador - 1);
 			}
+			finalizarTarefa();
 		}, 1000);
 	}
 
